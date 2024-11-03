@@ -22,7 +22,7 @@
 
 ## 💻 Requirements
 
-- Python >= 3.11
+- Python == 3.10, do not use other version
 - Internet connection
 - Valid email accounts for registration
 - Valid proxies (optional)
@@ -36,13 +36,19 @@
    git clone [repository URL]
    ```
 2. Create and activate a virtual environment:
+   make sure your python version is python3.10 in your OS.
+   **for windows**
    ```bash
-   python -m venv venv
+   python3.10 -m venv venv
    cd venv/Scripts
    activate
    cd ../..
    ```
-3. Install dependencies:
+   **for linux**
+   ```
+   source venv/bin/activate
+   ```
+4. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
@@ -70,7 +76,7 @@ imap_settings: # IMAP settings for email providers
 ```
 
 ### Other Configuration Files
-
+In the path: ./[config]->[data], there are 3 files: farm.txt, register.txt, proxies.txt
 #### 📁 register.txt
 Contains accounts for registration.
 ```
